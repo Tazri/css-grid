@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    background-color: thistle;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container div{
+    padding: 10px;
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+.header{
+    background-color: brown;
+}
+
+.menu{
+    background-color: tomato;
+}
+
+.content{
+    background-color: crimson;
+}
+
+.footer{
+    background-color: darkgoldenrod;
+}

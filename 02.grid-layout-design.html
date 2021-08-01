@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/02.grid-layout-design.css">
+    <title>Basic Layout</title>
+    <style>
+        .container{
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: 100px auto 100px;
+        }
+
+        /* .header{
+            grid-column-start: 1;
+            grid-column-end: 13 ;
+        } */
+
+        .header{
+            /* grid-column: 1/13; */
+            grid-column: 2/-1;
+        }
+
+        .menu{
+            grid-row: 1/3;
+        }
+
+        .content{
+            grid-column: 2/-1;
+        }
+
+        .footer{
+            /* grid-column: 1/ span 12; */
+            grid-column: 1/-1;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- container -->
+    <div class="container">
+        <!-- header -->
+        <div class="header">Header</div>
+
+        <!-- menu -->
+        <div class="menu">Menu</div>
+
+        <!-- content -->
+        <div class="content">Content</div>
+
+        <!-- footer -->
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+</html>

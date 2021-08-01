@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/02.grid-layout-design.css">
+    <title>Grid Template Areas</title>
+    <style>
+        .container{
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: 80px auto 80px;
+            grid-template-areas:
+                ". h h h h h h h h h h ."
+                "m m m c c c c c c c c c"
+                ". f f f f f f f f f f ."
+            ;
+        }
+
+        .header{
+            grid-area: h;
+        }
+
+        .menu{
+            grid-area: m;
+        }
+
+        .content{
+            grid-area: c;
+        }
+
+        .footer{
+            grid-area: f;
+        }
+    </style>
+</head>
+<body>
+    <!-- container -->
+    <div class="container">
+        <!-- header -->
+        <div class="header">Header</div>
+
+        <!-- menu -->
+        <div class="menu">Menu</div>
+
+        <!-- content -->
+        <div class="content">Content</div>
+
+        <!-- footer -->
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

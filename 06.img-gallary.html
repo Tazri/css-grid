@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img Gallary</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: #333;
+        }
+
+        h1{
+            text-align: center;
+            color: aliceblue;
+            padding: 30px;
+            user-select: none;
+        }
+
+        .container{
+            width: 100%;
+            padding: 5px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+            grid-auto-flow: dense;
+            grid-gap: 6px;
+        }
+
+        .container img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .horizontal{
+            border: 1px solid skyblue;
+            grid-column: span 2;
+        }
+
+        .vertical{
+            border: 1px solid lime;
+            grid-row: auto/ span 2;
+        }
+
+        .big{
+            border: 1px solid red;
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Simple Img Gallary</h1>
+    
+    <div class="container">
+        <div><img src="https://i.ibb.co/890znLz/air-balloons.jpg" alt="img"></div>
+        <div><img src="https://i.ibb.co/JkJDk7W/building-castle.jpg" alt="img"></div>
+        <div class="horizontal"><img src="https://i.ibb.co/MkGNyNJ/deer-tree-art.jpg" alt="img"></div>
+        <div><img src="https://i.ibb.co/85TmgRY/planet-on-sky.jpg" alt="img"></div>
+        <div><img src="https://i.ibb.co/zR2xXKv/village-sky.jpg" alt="img"></div>
+        <div class="horizontal"><img src="https://i.ibb.co/gtYgh4t/winter.jpg" alt="img"></div>
+        <div><img src="https://i.ibb.co/8bg055R/wolf-hill.jpg" alt="img"></div>
+        <div><img src="https://i.ibb.co/LCqqZxN/girl-twilight.jpg" alt="img"></div>
+        <div><img src="https://i.ibb.co/LvR8Z9C/piano.jpg" alt="img"></div>
+        <div><img src="https://i.ibb.co/6Ry1xKd/see-the-failling-star.jpg" alt="img"></div>
+        <div class="big"><img src="https://i.ibb.co/rxY2JCh/see-the-aurora.jpg" alt="img"></div>
+        <div><img src="https://i.ibb.co/Tg2GT0t/fam.jpg" alt="img"></div>
+        <div><img src="https://i.ibb.co/xLgT3Dj/1553156.jpg" alt="img"></div>
+        <div class="vertical"><img src="https://i.ibb.co/VJjZCfj/Attack-on-Titan.png" alt="img"></div>
+        <div><img src="https://i.ibb.co/NrfFQyk/full-metal-alchemist-edward-eleric.jpg" alt="img"></div>
+        <div><img src="https://i.ibb.co/LvR8Z9C/piano.jpg" alt="img"></div>
+        <div><img src="https://i.ibb.co/6Ry1xKd/see-the-failling-star.jpg" alt="img"></div>
+        <div><img src="https://i.ibb.co/rxY2JCh/see-the-aurora.jpg" alt="img"></div>
+        <div><img src="https://i.ibb.co/Tg2GT0t/fam.jpg" alt="img"></div>
+        <div><img src="https://i.ibb.co/xLgT3Dj/1553156.jpg" alt="img"></div>
+        <div><img src="https://i.ibb.co/VJjZCfj/Attack-on-Titan.png" alt="img"></div>
+    </div>
+</body>
+</html>
